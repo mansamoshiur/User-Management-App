@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+
+.card{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background-color: orange;
+    color: #fff;
+}
+section{
+    display: grid;
+}
+
+@media screen and (min-width:600px) {
+    section{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width:762px) {
+    section{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (min-width:992px) {
+    section{
+        grid-template-columns: auto auto auto auto;
+    }
+}
