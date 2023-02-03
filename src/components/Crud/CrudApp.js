@@ -29,7 +29,9 @@ const CrudApp = () => {
 
   // Delete user
   const handleDelete = (id) =>{
-    fetch(URL + `/${id}`)
+    fetch(URL + `/${id}`, {
+      method:'DELETE'
+    })
     .then((res)=>{
       if(!res.ok){
         throw Error('could not delete')
